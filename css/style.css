@@ -1,0 +1,522 @@
+:root{
+    --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #78d5ef;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+scroll-behavior: smooth;
+ }
+body{
+    --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+
+}
+
+/* style the header*/
+h3{
+    color: black;
+}
+button{
+    color: black !important;
+    border-color: var(--pink) !important;
+    background-color: #ceadae  !important;
+
+}
+button:hover{
+    background-color: #333 !important;
+    color: #fff !important;
+}
+.header{
+    
+    height: 100vh;
+    background-image:url('../images/adult-beautiful-elegant-eyewear-291762.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.wrap{
+   width: 50%;
+   height: 100%;
+   background-color: var(--pink);
+   opacity: 0.2; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+
+}
+/*style the navbar*/
+.navbar {
+padding-top: 3% !important;
+padding-left: 5% !important;
+z-index: 10;
+
+
+}
+
+nav ul li a {
+    color: #333 !important;
+    margin-left: 20px !important;
+    padding-left: 5% !important;
+    margin-left: 50px !important;
+}
+.add {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 58px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s all;
+    background-color : #fff;
+     color: #fff;
+ 
+}
+
+/*end the navbar*/
+.text-content{
+    position: absolute;
+    left: 30%;
+    bottom: 45%;
+    color: #fff;
+    
+    
+
+} 
+.text-content h1{
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-content h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 46%;
+}
+.right-text-bar{
+    position: fixed;
+    writing-mode: vertical-rl;
+    z-index: 1;
+    top: 39%;
+    
+}
+.left-text-bar{
+position: fixed;
+writing-mode: vertical-lr;
+z-index: 1;
+right: 40px;
+top: 39%;
+
+}
+.right-text-bar h2{
+font-weight: 300;
+font-size: 20px;
+text-align: center;
+color: black;
+}
+.left-text-bar h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+}
+#trending .bg-text h2{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.04);
+font-weight: 900;
+letter-spacing: 1;
+font-family: "Lato", Arial, sans-serif;
+font-size: 150px;
+}
+#trending .bg-text h2{
+    text-transform: uppercase;
+    
+}
+#trending .for-text{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+/*cards -styling*/
+.cardss{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+gap: 40px;
+
+}
+.cardss .card-text h3{
+    font-size: 15px;
+    
+    color: black;
+    margin-top: 45px;
+}
+.card-text h3{
+    color: #333;
+    font-weight: 400;
+}
+.cardss .card{
+    border:none !important; 
+}
+.card-image:hover .img-fluid{
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+
+
+}
+/* end cards styling*/ 
+
+/*start the online section*/
+#new-section{
+  padding-left: 10%;
+  margin-top: 10%;
+  
+  background-color: #f8f9fa;
+}
+#new-section .new-text h2{
+  color: black;
+    font-size: 60px;
+
+}
+#new-section .new-text p {
+    
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    margin-right: 20%;
+}
+/*end the online section*/
+
+/* start our proudcts section*/
+#our-products{
+    
+    background-color: #f8f9fa;
+    
+    text-align: center;
+
+}
+#our-products .background-text h2{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.04);
+font-weight: 400;
+letter-spacing: 1;
+font-family: "Lato", Arial, sans-serif;
+font-size: 100px;
+}
+#our-products .forground-text h2{
+position: relative;
+bottom: 95px;
+letter-spacing: 1;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 40px;
+}
+
+
+.cards .card-text h3{
+    font-size: 15px;
+    
+    color: black;
+    margin-top: 45px;
+}
+.card-text h3{
+    color: #333;
+    font-weight: 400;
+}
+.cards .card{
+    border:none !important; 
+}
+.card-image:hover .img-fluid{
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+
+
+}
+
+/* end our products section*/
+
+
+/*start summer-sale-section*/
+#summer-sale{
+    background-image: url(../images/bg_5.jpg);
+    height: 95vh;
+    margin-top: 40%;
+    padding-top: 10%;
+    background-position: center;
+    background-size: cover;
+}
+#summer-sale .content{
+  
+}
+#summer-sale h2{
+    font-weight: 700;
+    font-size: 120px;
+    color: #fff;
+    letter-spacing: 0;
+   
+    margin-left: 8%;
+    margin-top: 10%;
+   
+}
+
+/*end summer-sale-section*/
+
+
+/*start test secion*/
+#testimony{
+    text-align: center;
+    background-color: #f8f9fa;
+    height: 85vh;
+    padding-top: 5%;
+}
+#testimony .background-text h2{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.04);
+font-weight: 400;
+letter-spacing: 1;
+font-family: "Lato", Arial, sans-serif;
+font-size: 100px;
+}
+#testimony .forground-text h2{
+position: relative;
+bottom: 95px;
+letter-spacing: 1;
+}
+.carousel{
+    margin-top: 50px;
+  }
+  .carousel-inner{
+    height: 500px;
+  }
+  .carousel-caption{
+    color: #333;
+    top: 50%;
+  }
+  .carousel-inner p{
+      color: gray;
+      font-weight: 300;
+      margin-top: 30px;
+      
+
+  }
+/*end test section*/
+
+/*counter section*/
+#counter{
+    background-image: url(../images/bg_4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    padding: 15% 10% 3%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+.counter {
+    color: black;
+}
+/*end counter section*/
+
+/*start services section*/
+#services{
+    text-align: center;
+    background-color: #f8f9fa;
+    padding-top: 10%;
+
+}
+
+#services .bg-text h2{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.04);
+font-weight: 900;
+letter-spacing: 1;
+font-family: "Lato", Arial, sans-serif;
+font-size: 150px;
+
+}
+#services .bg-text h2{
+    text-transform: uppercase;
+    
+}
+#services .for-text{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+#services h2{
+    color: #333;
+}
+
+
+
+/*end services*/
+/*start news-letter*/
+#news-letter{
+    text-align: center;
+
+    
+
+}
+
+#news-letter .bg-text h2{
+    font-size: 70px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.04);
+font-weight: 900;
+letter-spacing: 1;
+font-family: "Lato", Arial, sans-serif;
+font-size: 150px;
+
+}
+#news-letter .bg-text h2{
+    text-transform: uppercase;
+    
+}
+#news-letter .for-text{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    color: black;
+
+}
+
+/*end news-letter*/
+
+
+
+/*start footer*/
+.footer{
+    background-color: #f8f9fa;
+    margin-top: 5%;
+    padding: 5%;
+
+}
+
+.text-center{
+  color:white;
+}
+
+/*end footer*/
+
+
+
+/*resposnive*/
+@media only screen and (max-width:786px)  {
+    #our-products{
+        margin-top: 120%;
+    }
+}
+@media only screen and (max-width:786px){
+    
+    .text-content h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .text-content h2{
+        font-size: 41px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-family: "Roboto Condensed", Arial, sans-serif;
+        color: #fff;
+        position: absolute;
+        left: 46%;
+    }
+    #our-products{
+    
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+         
+    }
+    #summer-sale{
+        
+        margin-top: 152%;
+        padding-top: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    #summer-sale h2{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .cardss{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 40px;
+        
+        }
+        #news-letter form{
+            margin-left: 14% !important;
+            width: 300px;  
+        }
+        .right-text-bar{
+            visibility: hidden;
+            
+        }
+        .left-text-bar{
+            visibility: hidden;
+        }
+   
+}
+/*end responsive*/
